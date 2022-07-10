@@ -22,8 +22,8 @@ export const StatTitle = styled.h2`
 
 export const StatReactionText = styled.p`
   background-color: ${theme.colors.valueBC};
-  padding: 5px;
-  color: ${theme.colors.title};
+  padding: 3px;
+  color: ${theme.colors.accent};
 `;
 export const StatValue = styled.span`
   display: inline-block;

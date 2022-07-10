@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { BtnFeedback, BtnDiv } from './FeedbackOptions.styled';
-import { AiOutlineSmile, AiOutlineFrown, AiOutlineMeh } from 'react-icons/ai';
+import { FaRegGrinBeam, FaRegFrown, FaRegMeh } from 'react-icons/fa';
 
 export function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
@@ -15,9 +15,9 @@ export function FeedbackOptions({ options, onLeaveFeedback }) {
             onLeaveFeedback(option);
           }}
         >
-          {option === 'good' && <AiOutlineSmile />}
-          {option === 'neutral' && <AiOutlineMeh />}
-          {option === 'bad' && <AiOutlineFrown />}
+          {option === 'good' && <FaRegGrinBeam />}
+          {option === 'neutral' && <FaRegMeh />}
+          {option === 'bad' && <FaRegFrown />}
         </BtnFeedback>
       ))}
     </BtnDiv>

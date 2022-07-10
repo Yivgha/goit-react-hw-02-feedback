@@ -16,10 +16,10 @@ export function Statistic({
 }) {
   return (
     <StatWrapper>
-      <StatTitle>Statistic</StatTitle>
+      <StatTitle>Statistics</StatTitle>
 
       <StatReactionText>
-        Goog: <StatValue>{good}</StatValue>
+        Good: <StatValue>{good}</StatValue>
       </StatReactionText>
       <StatReactionText>
         Neutral: <StatValue> {neutral}</StatValue>
