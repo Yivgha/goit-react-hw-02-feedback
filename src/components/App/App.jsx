@@ -34,7 +34,7 @@ export class App extends Component {
     const countTotalFeedback = this.countTotalFeedback();
     const { good } = this.state;
 
-    if (this.countTotalFeedback() !== 0) {
+    if (countTotalFeedback !== 0) {
       return Math.ceil((good / countTotalFeedback) * 100);
     }
     return 0;
