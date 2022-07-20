@@ -6,7 +6,7 @@ import { FaRegGrinBeam, FaRegFrown, FaRegMeh } from 'react-icons/fa';
 export function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <BtnDiv>
-      {options.map(option => (
+      {Object.keys(options).map(option => (
         <BtnFeedback
           key={option}
           type="button"
